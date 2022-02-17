@@ -1,0 +1,553 @@
+@import 'modules/others';
+@import 'modules/botones';
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/menu';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --color-primario: #2E55FA;
+  --color-secundario: #3C3C3C;
+  --color-texto: #FFF;
+  --color-sombra: #ccc;
+}
+
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+.outline {
+    outline: 1px solid black;
+}
+
+.outline-g {
+    outline: 1px solid green;
+}
+
+.outline-y {
+    outline: 1px solid yellow;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-darkgray {
+    background-color: darkgray;
+}
+
+.right {
+    text-align: right;
+}
+
+.lef {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.mar-top {
+    margin-top: 25px;
+}
+
+.mar-bot {
+    margin-bottom: 25px;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.margen-cell {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+body {
+  background-color: var(--color-primario);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.logo{
+  width: 100%;
+}
+
+.menu-header{
+  display: inline-flex;
+  li{
+    margin: 10px 10px;
+  }
+  .icono-menu-header{
+    width: 15px;
+    margin: 0 5px;
+  }
+  a{
+    color: var(--color-texto);
+  }
+}
+
+.icono-redes-header{
+  width: 25px;
+}
+
+
+
+.fecha-hora{
+  font-size: 0.9em;
+  padding-top: 8px;
+}
+
+.menu-redes-header{
+  display: inline-flex;
+  li{
+    margin: 3px;
+  }
+  .grados-header{
+    font-size: 1.2em;
+  }
+  .icono-redes-header-facebook{
+    width: 23px;
+  }
+  .icono-redes-header-nube{
+    width: 50px;
+  }
+}
+
+.menu-tiempo-header{
+  display: inline-flex;
+  margin-left: 5px;
+  li{
+    margin: 3px;
+  }
+  .icono-redes-header-nube{
+    width: 50px;
+  }
+}
+
+.col-redes-header{
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+
+.title-home{
+  font-size: 2.7em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.background-home{
+  background-image: url(/img/fondo-home.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+
+
+// arribos
+
+.col-arribos{
+  background: var(--color-primario);
+  border-radius: 0 30px 0 0;
+
+  margin-bottom: 0 !important;
+}
+
+.arribos{
+  background: #fff;
+  border-radius: 0 30px 30px;
+  height: 300px;
+  color: #000;
+}
+
+.bordes-arribos{
+  border-radius: 0 25px 0 0;
+  padding: 10px;
+  background: var(--color-sombra);
+  color: #000000;
+  font-size: 1.4em;
+  //padding-left: 20px;
+  font-weight: bold;
+}
+
+.bordes-partidas{
+  border-radius: 0 25px 0 0;
+  padding: 10px;
+  font-size: 1.4em;
+  color: var(--color-texto);
+}
+
+.icon-arribos{
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.encabezado-arribos{
+  background: #000;
+  font-size: .9em;
+  padding: 5px;
+  color: #FFF;
+}
+
+.filas-arribos{
+  font-size: .8em;
+  font-weight: bold;
+  span{
+    font-size: 1em;
+    font-weight: normal;
+    vertical-align: text-bottom;
+  }
+}
+
+.estado-aterrizado{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 5px;
+}
+.estado-en-horario{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(154, 240, 128);
+  margin-right: 5px;
+}
+.estado-atrazado{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(231, 229, 95);
+  margin-right: 5px;
+}
+
+.bordes-ampliar{
+  border-radius: 0 0 25px 0;
+  padding: 5px;
+  margin: 5px 15px 0 0;
+  background: var(--color-sombra);
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+
+.vuelos-destinos{
+  background: var(--color-primario);
+  border-radius: 25px 0 25px 0;
+  padding: 10px;
+  p{
+    font-size: 1.7em;
+    margin: 0 15px;
+    padding-bottom: 15px;
+    color: var(--color-texto);
+  }
+}
+
+.vuelos-destinos:hover{
+  background: rgb(54, 115, 247);
+}
+
+.icon-vuelos-y-destinos{
+  width: 100px;
+}
+
+.menu-vuelos{
+  font-size: 1.3em;
+  li{
+    background: var(--color-primario);
+    border-radius: 0 0 25px 0;
+    margin: 15px 0;
+    padding: 10px;
+  }
+  li:hover{
+    background: rgb(54, 115, 247);
+  }
+  a{
+    color: var(--color-texto);
+  }
+}
+
+// novedades
+
+.article-novedades{
+  overflow:hidden;
+  background: #fff;
+  color: #000;
+  border-radius: 25px 0 0 0;
+  img{
+    border-radius: 25px 0 25px 0;
+  }
+  img:hover{
+    transform:scale(1.1);
+    transition:all .5s ease;
+  }
+  h2{
+    font-weight: bold;
+    margin: 10px 20px;
+    color: var(--color-primario);
+  }
+  p{
+    font-size: .9em;
+    margin: 0px 20px;
+    padding-bottom: 5px;
+  }
+}
+
+
+
+// single
+.margin-single{
+  margin: 20px 22%;
+}
+
+.bg-single{
+  background: #fff;
+  color: #000;
+}
+
+.imagen-single{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-single{
+  background: var(--color-primario);
+  width: 45%;
+  border-radius: 25px 0 25px 0;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  color: var(--color-texto);
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitle-single{
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+.content{
+  margin: 20px;
+
+}
+
+// breadcrumb
+.content-breadcrumb{
+  color: var(--color-texto);
+  background: #b3aaaa;
+  padding: 10px 0 5px 200px;
+}
+
+
+// Page Contacto
+.redes-contacto{
+  display: inline-flex;
+  margin: 30px 0;
+  img{
+    width: 75px;
+  }
+}
+
+.info-contacto{
+  font-size: 1.2em;
+  margin-top: 40px;
+}
+
+// Page Historia
+
+.imagen-historia{
+  margin: 30px 50px;
+}
+
+// Page días de vuelo
+.tilde-verde{
+  text-align: center;
+  display: inline-flex;
+  font-size: 1.3em;
+  img{
+    margin: 0 10px;
+  }
+}
+
+.dias-de-vuelo-info{
+  background: #000;
+  color: var(--color-texto);
+  padding: 5px 10px;
+}
+
+// esquinas de diseño
+
+.esquina-header{
+  width: 60px;
+  position: absolute;
+  top: -49px;
+  right: 0;
+}
+
+.esquina-header-single{
+  width: 60px;
+  position: absolute;
+  top: -36px;
+  right: 0;
+}
+
+.esquina-footer{
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+// footer
+
+.col-footer{
+  position: relative;
+}
+
+.logo-footer{
+  width: 200px;
+}
+
+.info-footer{
+  font-size: .9em;
+  font-weight: bold;
+}
+
+.bg-footer{
+  background: #2E55FA;
+}
+
+.todas-las-noticias{
+  font-size: 1.6em;
+  color: var(--color-texto);
+}
+
+// Paginacion
+
+.next.page-numbers,.prev.page-numbers{
+  font-size: 1.3em;
+  color: var(--color-texto);
+  margin: 0 15px;
+  padding: 10px 25px;
+}
+
+.nav-links{
+  margin: 10px;
+}
+
+.page-numbers{
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+  background: #2E55FA;
+  padding: 10px;
+}
+
+.page-numbers.current{
+  margin: 10px;
+  padding: 10px;
+  background: #045e61;
+  font-size: 1.5em;
+  color: rgb(132, 238, 159);
+}
+/////////////////////////////////////////////////////////////////////////
+
+
+@media screen and (max-width: 40em) {
+   .fecha-hora{
+    text-align: center;
+  }
+
+  .title-home{
+    font-size: 1.6em;
+    //text-align: center;
+    margin: 0 50px 25px 30px;
+  }
+
+  .background-home{
+    padding: 1rem 5px !important;
+  }
+
+  .margin-single{
+    margin: 20px 4%;
+  }
+
+  .title-single{
+    width: 100%;
+  }
+
+  .tilde-verde {
+    display: contents;
+  }
+
+  .logo{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: -140px;
+  }
+
+  .col-menu-secundario{
+    padding: 0;
+    display: -webkit-inline-box;
+  }
+
+  .menu-vuelos{
+    font-size: 1em;
+    padding: 0 10px 0 15px;
+    a{
+      color: var(--color-primario);
+    }
+    a:hover{
+      color: var(--color-texto);
+    }
+    li{
+      background: var(--color-texto);
+    }
+  }
+
+  .col-tiempo-header{
+    text-align: -webkit-center;
+  }
+
+  .icon-vuelos-y-destinos{
+    width: 40px;
+  }
+
+  .vuelos-destinos{
+    display: -webkit-inline-box;
+  }
+
+
+}

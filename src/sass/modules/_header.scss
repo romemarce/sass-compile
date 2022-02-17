@@ -1,0 +1,95 @@
+.logo {
+    width: 80%;
+    //margin-top: 25px;
+    //margin-left: 100px;
+}
+
+.redes-sociales {
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 40em) {
+    .redes-sociales {
+        justify-content: center;
+    }
+
+    .pad-header {
+        padding-top: 10px;
+    }
+}
+
+.nosotros {
+    color: rgb(238, 241, 31);
+    font-size: 1.4em;
+}
+
+
+
+.importante {
+    margin: 8px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.marquesina {
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+}
+
+.marquesina a {
+    color: black;
+}
+
+////////////////////////////////////////////////////
+
+.buscar-header {
+    background-color: darkgray;
+    margin: 100x;
+}
+
+.form-buscar {
+    margin-top: 3px;
+}
+
+.buscar-header .boton-buscar {
+    background-image: url("http://localhost/diariocomercial/wp-content/themes/diariocomercial/img/search-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    float: left;
+}
+
+.caja-texto-buscar {
+    width: 85%;
+    height: 30px;
+    float: left;
+    margin: 2px;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.icono-persona {
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 40em) {
+    .icono-persona {
+        margin-top: 12px;
+        margin-right: 0;
+    }
+
+    .buscar-header {
+        display: none;
+    }
+}

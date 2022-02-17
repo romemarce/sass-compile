@@ -1,0 +1,17 @@
+.footer{
+    background-color: black;
+}
+
+.logo-footer{
+    padding-top: 10px;
+}
+
+.cabureweb{
+    margin-bottom: 10px;
+    width: 25px;
+    &:hover {
+        //background-color:rgba(211, 22, 22, 0.5);
+        background-image: url("http://localhost/contodoalaire/wp-content/themes/contodoalaire/img/cabureweb2.png");
+        background-size: 100%;
+    }
+}
