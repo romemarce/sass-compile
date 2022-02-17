@@ -1,191 +1,183 @@
-@import 'modules/others';
-@import 'modules/botones';
-@import 'modules/header';
-@import 'modules/footer';
-@import 'modules/menu';
+@import "modules/botones";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/menu";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 :root {
-  --color-primario: #2E55FA;
-  --color-secundario: #3C3C3C;
-  --color-texto: #FFF;
+  --color-primario: #2e55fa;
+  --color-secundario: #3c3c3c;
+  --color-texto: #fff;
   --color-sombra: #ccc;
 }
-
 
 *,
 :after,
 :before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .outline {
-    outline: 1px solid black;
+  outline: 1px solid black;
 }
 
 .outline-g {
-    outline: 1px solid green;
+  outline: 1px solid green;
 }
 
 .outline-y {
-    outline: 1px solid yellow;
+  outline: 1px solid yellow;
 }
 
 .bg-red {
-    background-color: red;
+  background-color: red;
 }
 
 .bg-black {
-    background-color: black;
+  background-color: black;
 }
 
 .bg-green {
-    background-color: green;
+  background-color: green;
 }
 
 .bg-white {
-    background-color: white;
+  background-color: white;
 }
 
 .bg-darkgray {
-    background-color: darkgray;
+  background-color: darkgray;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 .lef {
-    text-align: left;
+  text-align: left;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .mar-top {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .mar-bot {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .pos-abs {
-    position: absolute;
+  position: absolute;
 }
 
 .pos-rel {
-    position: relative;
+  position: relative;
 }
 
 .margen-cell {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /////////////////////////////////////////////////////////////////////////
 
 body {
   background-color: var(--color-primario);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.logo{
+.logo {
   width: 100%;
 }
 
-.menu-header{
+.menu-header {
   display: inline-flex;
-  li{
+  li {
     margin: 10px 10px;
   }
-  .icono-menu-header{
+  .icono-menu-header {
     width: 15px;
     margin: 0 5px;
   }
-  a{
+  a {
     color: var(--color-texto);
   }
 }
 
-.icono-redes-header{
+.icono-redes-header {
   width: 25px;
 }
 
-
-
-.fecha-hora{
+.fecha-hora {
   font-size: 0.9em;
   padding-top: 8px;
 }
 
-.menu-redes-header{
+.menu-redes-header {
   display: inline-flex;
-  li{
+  li {
     margin: 3px;
   }
-  .grados-header{
+  .grados-header {
     font-size: 1.2em;
   }
-  .icono-redes-header-facebook{
+  .icono-redes-header-facebook {
     width: 23px;
   }
-  .icono-redes-header-nube{
+  .icono-redes-header-nube {
     width: 50px;
   }
 }
 
-.menu-tiempo-header{
+.menu-tiempo-header {
   display: inline-flex;
   margin-left: 5px;
-  li{
+  li {
     margin: 3px;
   }
-  .icono-redes-header-nube{
+  .icono-redes-header-nube {
     width: 50px;
   }
 }
 
-.col-redes-header{
+.col-redes-header {
   margin: 0;
   padding: 20px 0 0 0;
 }
 
-
-.title-home{
+.title-home {
   font-size: 2.7em;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.background-home{
-  background-image: url(/img/fondo-home.jpg);
+.background-home {
+  // background-image: url("./img/fondo-home.jpg");
   background-size: cover;
   width: 100%;
 }
 
-
-
 // arribos
 
-.col-arribos{
+.col-arribos {
   background: var(--color-primario);
   border-radius: 0 30px 0 0;
 
   margin-bottom: 0 !important;
 }
 
-.arribos{
+.arribos {
   background: #fff;
   border-radius: 0 30px 30px;
   height: 300px;
   color: #000;
 }
 
-.bordes-arribos{
+.bordes-arribos {
   border-radius: 0 25px 0 0;
   padding: 10px;
   background: var(--color-sombra);
@@ -195,37 +187,37 @@ body {
   font-weight: bold;
 }
 
-.bordes-partidas{
+.bordes-partidas {
   border-radius: 0 25px 0 0;
   padding: 10px;
   font-size: 1.4em;
   color: var(--color-texto);
 }
 
-.icon-arribos{
+.icon-arribos {
   width: 30px;
   vertical-align: middle;
   margin-left: 5px;
 }
 
-.encabezado-arribos{
+.encabezado-arribos {
   background: #000;
-  font-size: .9em;
+  font-size: 0.9em;
   padding: 5px;
-  color: #FFF;
+  color: #fff;
 }
 
-.filas-arribos{
-  font-size: .8em;
+.filas-arribos {
+  font-size: 0.8em;
   font-weight: bold;
-  span{
+  span {
     font-size: 1em;
     font-weight: normal;
     vertical-align: text-bottom;
   }
 }
 
-.estado-aterrizado{
+.estado-aterrizado {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -233,7 +225,7 @@ body {
   background: #ccc;
   margin-right: 5px;
 }
-.estado-en-horario{
+.estado-en-horario {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -241,7 +233,7 @@ body {
   background: rgb(154, 240, 128);
   margin-right: 5px;
 }
-.estado-atrazado{
+.estado-atrazado {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -250,7 +242,7 @@ body {
   margin-right: 5px;
 }
 
-.bordes-ampliar{
+.bordes-ampliar {
   border-radius: 0 0 25px 0;
   padding: 5px;
   margin: 5px 15px 0 0;
@@ -260,12 +252,11 @@ body {
   font-weight: bold;
 }
 
-
-.vuelos-destinos{
+.vuelos-destinos {
   background: var(--color-primario);
   border-radius: 25px 0 25px 0;
   padding: 10px;
-  p{
+  p {
     font-size: 1.7em;
     margin: 0 15px;
     padding-bottom: 15px;
@@ -273,74 +264,72 @@ body {
   }
 }
 
-.vuelos-destinos:hover{
+.vuelos-destinos:hover {
   background: rgb(54, 115, 247);
 }
 
-.icon-vuelos-y-destinos{
+.icon-vuelos-y-destinos {
   width: 100px;
 }
 
-.menu-vuelos{
+.menu-vuelos {
   font-size: 1.3em;
-  li{
+  li {
     background: var(--color-primario);
     border-radius: 0 0 25px 0;
     margin: 15px 0;
     padding: 10px;
   }
-  li:hover{
+  li:hover {
     background: rgb(54, 115, 247);
   }
-  a{
+  a {
     color: var(--color-texto);
   }
 }
 
 // novedades
 
-.article-novedades{
-  overflow:hidden;
+.article-novedades {
+  overflow: hidden;
   background: #fff;
   color: #000;
   border-radius: 25px 0 0 0;
-  img{
+  img {
     border-radius: 25px 0 25px 0;
   }
-  img:hover{
-    transform:scale(1.1);
-    transition:all .5s ease;
+  img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
   }
-  h2{
+  h2 {
     font-weight: bold;
     margin: 10px 20px;
     color: var(--color-primario);
   }
-  p{
-    font-size: .9em;
+  p {
+    font-size: 0.9em;
     margin: 0px 20px;
     padding-bottom: 5px;
   }
 }
 
-
-
 // single
-.margin-single{
+.margin-single {
   margin: 20px 22%;
 }
 
-.bg-single{
+.bg-single {
   background: #fff;
   color: #000;
 }
 
-.imagen-single{
+.imagen-single {
   text-align: center;
   margin-top: 20px;
 }
 
-.title-single{
+.title-single {
   background: var(--color-primario);
   width: 45%;
   border-radius: 25px 0 25px 0;
@@ -352,55 +341,53 @@ body {
   font-weight: bold;
 }
 
-.subtitle-single{
+.subtitle-single {
   font-size: 1.2em;
   padding-bottom: 20px;
 }
 
-.content{
+.content {
   margin: 20px;
-
 }
 
 // breadcrumb
-.content-breadcrumb{
+.content-breadcrumb {
   color: var(--color-texto);
   background: #b3aaaa;
   padding: 10px 0 5px 200px;
 }
 
-
 // Page Contacto
-.redes-contacto{
+.redes-contacto {
   display: inline-flex;
   margin: 30px 0;
-  img{
+  img {
     width: 75px;
   }
 }
 
-.info-contacto{
+.info-contacto {
   font-size: 1.2em;
   margin-top: 40px;
 }
 
 // Page Historia
 
-.imagen-historia{
+.imagen-historia {
   margin: 30px 50px;
 }
 
 // Page días de vuelo
-.tilde-verde{
+.tilde-verde {
   text-align: center;
   display: inline-flex;
   font-size: 1.3em;
-  img{
+  img {
     margin: 0 10px;
   }
 }
 
-.dias-de-vuelo-info{
+.dias-de-vuelo-info {
   background: #000;
   color: var(--color-texto);
   padding: 5px 10px;
@@ -408,74 +395,73 @@ body {
 
 // esquinas de diseño
 
-.esquina-header{
+.esquina-header {
   width: 60px;
   position: absolute;
   top: -49px;
   right: 0;
 }
 
-.esquina-header-single{
+.esquina-header-single {
   width: 60px;
   position: absolute;
   top: -36px;
   right: 0;
 }
 
-.esquina-footer{
+.esquina-footer {
   width: 150px;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-
-
 // footer
 
-.col-footer{
+.col-footer {
   position: relative;
 }
 
-.logo-footer{
+.logo-footer {
   width: 200px;
 }
 
-.info-footer{
-  font-size: .9em;
+.info-footer {
+  font-size: 0.9em;
   font-weight: bold;
 }
 
-.bg-footer{
-  background: #2E55FA;
+.bg-footer {
+  background: #2e55fa;
 }
 
-.todas-las-noticias{
+.todas-las-noticias {
   font-size: 1.6em;
   color: var(--color-texto);
 }
 
 // Paginacion
 
-.next.page-numbers,.prev.page-numbers{
+.next.page-numbers,
+.prev.page-numbers {
   font-size: 1.3em;
   color: var(--color-texto);
   margin: 0 15px;
   padding: 10px 25px;
 }
 
-.nav-links{
+.nav-links {
   margin: 10px;
 }
 
-.page-numbers{
+.page-numbers {
   font-size: 1.3em;
   color: rgb(255, 255, 255);
-  background: #2E55FA;
+  background: #2e55fa;
   padding: 10px;
 }
 
-.page-numbers.current{
+.page-numbers.current {
   margin: 10px;
   padding: 10px;
   background: #045e61;
@@ -484,27 +470,26 @@ body {
 }
 /////////////////////////////////////////////////////////////////////////
 
-
 @media screen and (max-width: 40em) {
-   .fecha-hora{
+  .fecha-hora {
     text-align: center;
   }
 
-  .title-home{
+  .title-home {
     font-size: 1.6em;
     //text-align: center;
     margin: 0 50px 25px 30px;
   }
 
-  .background-home{
+  .background-home {
     padding: 1rem 5px !important;
   }
 
-  .margin-single{
+  .margin-single {
     margin: 20px 4%;
   }
 
-  .title-single{
+  .title-single {
     width: 100%;
   }
 
@@ -512,42 +497,40 @@ body {
     display: contents;
   }
 
-  .logo{
+  .logo {
     width: 50%;
     margin-top: 20px;
     margin-left: -140px;
   }
 
-  .col-menu-secundario{
+  .col-menu-secundario {
     padding: 0;
     display: -webkit-inline-box;
   }
 
-  .menu-vuelos{
+  .menu-vuelos {
     font-size: 1em;
     padding: 0 10px 0 15px;
-    a{
+    a {
       color: var(--color-primario);
     }
-    a:hover{
+    a:hover {
       color: var(--color-texto);
     }
-    li{
+    li {
       background: var(--color-texto);
     }
   }
 
-  .col-tiempo-header{
+  .col-tiempo-header {
     text-align: -webkit-center;
   }
 
-  .icon-vuelos-y-destinos{
+  .icon-vuelos-y-destinos {
     width: 40px;
   }
 
-  .vuelos-destinos{
+  .vuelos-destinos {
     display: -webkit-inline-box;
   }
-
-
 }

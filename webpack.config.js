@@ -1,7 +1,9 @@
+const THEME_NAME = "themebase-rd";
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var path = require("path");
 
-const outputPath = `./../../themes/${process.env.THEME_NAME}/dist`;
+const outputPath = `./../assets/dist`;
 const entryPoints = {
   main: "./src/js/app.js",
   app: "./src/sass/main.scss",
@@ -32,7 +34,9 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              sassOptions: { indentedSyntax: true },
+              sassOptions: {
+                indentedSyntax: true,
+              },
             },
           },
         ],

@@ -1,175 +1,208 @@
-  // NAVIGATION STYLES
-  // **********************
+// NAVIGATION STYLES
+// **********************
 
+nav {
+  margin: 0 auto;
+  width: 80%;
+  // background: linear-gradient(to bottom, #091cc7 0%, #11e5ec 100%);
+  // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 715px) {
   nav {
-    margin: 0 auto;
-    width: 80%;
-    // background: linear-gradient(to bottom, #091cc7 0%, #11e5ec 100%);
-    // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35);
-   }
-    @media (max-width: 715px) {
-      nav {
-        margin: 0px 0 0 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.5s ease;
-        background: #191919; } }
+    margin: 0px 0 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    background: #191919;
+  }
+}
 
+nav ul {
+  margin: 0 auto;
+  width: 1100px;
+  list-style: none;
+}
+@media (max-width: 715px) {
   nav ul {
-    margin: 0 auto;
-    width: 1100px;
-    list-style: none; }
-    @media (max-width: 715px) {
-      nav ul {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
-        z-index: 15; } }
-        nav ul li {
-          float: left;
-          position: relative;
-          z-index: 1;
-      /******************
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+    z-index: 15;
+  }
+}
+nav ul li {
+  float: left;
+  position: relative;
+  z-index: 1;
+  /******************
       SUBNAV
-      ******************/ }
-      @media (max-width: 715px) {
-        nav ul li {
-          float: none;
-          position: relative;
-          margin: 0; } }
-      nav ul li a {
-        display: block;
-        padding: 5px 10px;
-        text-align: center;
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        // border-right: 1px solid #dadada;
-        transition: all 0.1s ease;
-        font-family: sans-serif; }
-        nav ul li a:hover {
-          background: #070552;
-          color: #ffffff;
-          transition: all 0.2s ease;
-        }
-        @media (max-width: 715px) {
-          nav ul li a {
-            display: table;
-            margin: 0;
-            padding: 15px 2px;
-            background: rgb(34, 34, 161);
-            color: white;
-            border-top: 1px solid rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
-            text-shadow: none;
-            width: 100%; } }
-            // se agrego el punto delante para menu responsive
-      .nav ul li:hover ul {
-        opacity: 1;
-        max-height: 1000px;
-        transition: all 0.3s ease; }
-        @media (max-width: 715px) {
-          nav ul li:hover ul {
-            max-height: 0; } }
-      nav ul li ul {
-        background: #2E55FA;
-        list-style: none;
-        padding: 0;
-        position: absolute;
-        width: 200px;
-        max-height: 0;
-        z-index: 0;
-        opacity: 0;
-        overflow: hidden;
-        font-size: .9em;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-        transition: all 0.3s ease; }
-        @media (max-width: 715px) {
-          nav ul li ul {
-            max-height: 0;
-            opacity: 1;
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-            box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-            transition: all 2s ease; } }
-        nav ul li ul li {
-          float: none;
-          margin: 0; }
-          @media (max-width: 715px) {
-            nav ul li ul li {
-              margin: 0; } }
-          nav ul li ul li a {
-            display: block;
-            text-align: left;
-            padding: 6.66667px 16.66667px;
-            margin: 0;
-            border-right: none;
-            border-top: 1px solid #d4d4d4;
-            box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
-            text-transform: none;
-            text-shadow: none;
-            transition: all 0.2s ease; }
-            nav ul li ul li a:hover {
-              color: #2E55FA;
-              background: white;
-              transition: all 0.5s ease; }
-            @media (max-width: 715px) {
-              nav ul li ul li a {
-                color: white;
-                padding-left: 20px;
-                background: none; } }
+      ******************/
+}
+@media (max-width: 715px) {
+  nav ul li {
+    float: none;
+    position: relative;
+    margin: 0;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  // border-right: 1px solid #dadada;
+  transition: all 0.1s ease;
+  font-family: sans-serif;
+}
+nav ul li a:hover {
+  background: #070552;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+@media (max-width: 715px) {
+  nav ul li a {
+    display: table;
+    margin: 0;
+    padding: 15px 2px;
+    background: rgb(34, 34, 161);
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
+    text-shadow: none;
+    width: 100%;
+  }
+}
+// se agrego el punto delante para menu responsive
+.nav ul li:hover ul {
+  opacity: 1;
+  max-height: 1000px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 715px) {
+  nav ul li:hover ul {
+    max-height: 0;
+  }
+}
+nav ul li ul {
+  background: #2e55fa;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  max-height: 0;
+  z-index: 0;
+  opacity: 0;
+  overflow: hidden;
+  font-size: 0.9em;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+@media (max-width: 715px) {
+  nav ul li ul {
+    max-height: 0;
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: all 2s ease;
+  }
+}
+nav ul li ul li {
+  float: none;
+  margin: 0;
+}
+@media (max-width: 715px) {
+  nav ul li ul li {
+    margin: 0;
+  }
+}
+nav ul li ul li a {
+  display: block;
+  text-align: left;
+  padding: 6.66667px 16.66667px;
+  margin: 0;
+  border-right: none;
+  border-top: 1px solid #d4d4d4;
+  box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.03);
+  text-transform: none;
+  text-shadow: none;
+  transition: all 0.2s ease;
+}
+nav ul li ul li a:hover {
+  color: #2e55fa;
+  background: white;
+  transition: all 0.5s ease;
+}
+@media (max-width: 715px) {
+  nav ul li ul li a {
+    color: white;
+    padding-left: 20px;
+    background: none;
+  }
+}
 
-  /***************************
+/***************************
   MOBILE NAV STYLES
   ***************************/
+.mobile {
+  display: none;
+  margin: 0;
+  padding: 20px 15px;
+  //background: linear-gradient(to bottom, #353535 0%, #262626 100%);
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top: 25px;
+  right: 15px;
+  line-height: 0;
+  //box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 715px) {
   .mobile {
-    display: none;
-    margin: 0;
-    padding: 20px 15px;
-    //background: linear-gradient(to bottom, #353535 0%, #262626 100%);
+    display: table;
+  }
+}
+
+.active {
+  max-height: 9000px !important;
+  transition: all 1s ease;
+}
+
+@media (max-width: 715px) {
+  .arrow {
+    display: block;
+    // background: url(../img/arrow.png) no-repeat;
+    float: right;
+    height: 30px;
+    width: 30px;
     position: absolute;
-    color: white;
-    text-decoration: none;
-    top: 25px;
-    right: 15px;
-    line-height: 0;
-    //box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35);
-   }
-    @media (max-width: 715px) {
-      .mobile {
-        display: table; } }
+    right: 25px;
+    top: 10px;
+    transition: all 0.3s ease;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+  .rotate {
+    transition: all 0.3s ease;
+    transform: rotate(-180deg);
+  }
+}
 
-  .active {
-    max-height: 9000px !important;
-    transition: all 1s ease; }
+// custom
+#menu-menu_principal {
+  // background-image: url("");
 
-  @media (max-width: 715px) {
-    .arrow {
-      display: block;
-      //background: url(../img/arrow.png) no-repeat;
-      float: right;
-      height: 30px;
-      width: 30px;
-      position: absolute;
-      right: 25px;
-      top: 10px;
-      transition: all 0.3s ease; }
-      .arrow:hover {
-        cursor: pointer; }
-    .rotate {
-      transition: all 0.3s ease;
-      transform: rotate(-180deg); } }
-
-      // custom
-      #menu-menu_principal{
-        a[href^="#"]::after {
-          content: url('/img/icono-menu-header.png');
-          margin-left: 10px;
-        }
-        a[href^="#"]::after:hover {
-          content: url('/img/icono-menu-header-hover.png');
-          margin-left: 10px;
-        }
-      }
+  a[href^="#"]::after {
+    background-image: url("http://localhost/wp_pruebas/wp-content/themes/themebase-rd/assets/img/icono-menu-header.png");
+    margin-left: 10px;
+  }
+  a[href^="#"]::after:hover {
+    background-image: url("http://localhost/wp_pruebas/wp-content/themes/themebase-rd/assets/img/icono-menu-header-hover.png");
+    margin-left: 10px;
+  }
+}
